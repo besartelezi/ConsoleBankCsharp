@@ -1,0 +1,15 @@
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\bin\Debug\net6.0\ConsoleBankCsharp.exe
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\bin\Debug\net6.0\ConsoleBankCsharp.deps.json
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\bin\Debug\net6.0\ConsoleBankCsharp.runtimeconfig.json
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\bin\Debug\net6.0\ConsoleBankCsharp.dll
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\bin\Debug\net6.0\ConsoleBankCsharp.pdb
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\obj\Debug\net6.0\ConsoleBankCsharp.csproj.AssemblyReference.cache
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\obj\Debug\net6.0\ConsoleBankCsharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\obj\Debug\net6.0\ConsoleBankCsharp.AssemblyInfoInputs.cache
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\obj\Debug\net6.0\ConsoleBankCsharp.AssemblyInfo.cs
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\obj\Debug\net6.0\ConsoleBankCsharp.csproj.CoreCompileInputs.cache
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\obj\Debug\net6.0\ConsoleBankCsharp.dll
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\obj\Debug\net6.0\refint\ConsoleBankCsharp.dll
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\obj\Debug\net6.0\ConsoleBankCsharp.pdb
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\obj\Debug\net6.0\ConsoleBankCsharp.genruntimeconfig.cache
+D:\Becode\4.Summer-Pastures\C#\ConsoleBankCsharp\obj\Debug\net6.0\ref\ConsoleBankCsharp.dll
