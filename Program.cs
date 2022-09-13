@@ -4,4 +4,6 @@ using a;
 
 Console.WriteLine("Hello, World!");
 
-BankAccount bankAccount = new BankAccount(1);
+BankAccount bankAccount = new BankAccount("John", 75, "saving");
+
+Console.WriteLine(bankAccount._clientName);
