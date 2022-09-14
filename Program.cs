@@ -1,9 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.Net.Http.Json;
 using a;
 
-Console.WriteLine("Hello, World!");
+Bank bank = new Bank("Big Baba Besart Banking");
 
-BankAccount bankAccount = new BankAccount("John", 75, "saving");
+bank.Greeting();
+bank.Register();
 
-Console.WriteLine(bankAccount._clientName);
