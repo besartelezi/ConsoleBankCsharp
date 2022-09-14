@@ -8,7 +8,7 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Besart\\.nuget\\packages\\": {}
+    "C:\\Users\\besar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -16,11 +16,11 @@
       "projectUniqueName": "D:\\Becode\\4.Summer-Pastures\\C#\\ConsoleBankCsharp\\ConsoleBankCsharp.csproj",
       "projectName": "ConsoleBankCsharp",
       "projectPath": "D:\\Becode\\4.Summer-Pastures\\C#\\ConsoleBankCsharp\\ConsoleBankCsharp.csproj",
-      "packagesPath": "C:\\Users\\Besart\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\besar\\.nuget\\packages\\",
       "outputPath": "D:\\Becode\\4.Summer-Pastures\\C#\\ConsoleBankCsharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Besart\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\besar\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
