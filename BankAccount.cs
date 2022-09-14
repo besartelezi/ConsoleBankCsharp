@@ -35,18 +35,32 @@ public class BankAccount
     }
 
     //methods
-    public string CheckBalance
+    public void Withdraw()
     {
-        get { return "your current balance is " + balance; }
-    }
+        int withdrawAmount;
+        CheckBalance();
+        Console.WriteLine("How much euros would you like to withdraw?");
 
-    public int Withdraw
-    {
-        set { balance -= value; }
-    }
+        withdrawAmount = Convert.ToInt32(Console.ReadLine());
+        balance -= withdrawAmount;
 
-    public int Deposit
+        Console.WriteLine($"You have successfully withdrawn: {withdrawAmount} euros.");
+    }
+    
+    public void Deposit()
     {
-        set { balance += value; }
+        int depositAmount;
+        CheckBalance();
+        Console.WriteLine("How much euros would you like to deposit?");
+
+        depositAmount = Convert.ToInt32(Console.ReadLine());
+        balance += depositAmount;
+
+        Console.WriteLine($"You have successfully deposited: {depositAmount} euros.");
+    }
+    
+    public void CheckBalance()
+    {
+        Console.WriteLine($"Your current balance is: {balance}");
     }
 }
