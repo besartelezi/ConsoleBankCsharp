@@ -12,3 +12,9 @@ You do this by right-clicking in the editor where you'd like to add the setters 
 Here's another very important thing I've learned: The Program.cs file should only contain methods that are being called.
 One of my fellow Becode Learners taught me this.
 This really helped me write cleaner, more readable, and more understandable code.
+
+## Git off me' darn' property!
+Properties.
+The naming convention of properties in C# is something I'm still not too familiar with.
+But now I learned that the properties themselves need to have an underscore in front of them.
+
