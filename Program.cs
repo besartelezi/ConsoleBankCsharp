@@ -6,5 +6,9 @@ using a;
 Bank bank = new Bank("Big Baba Besart Banking");
 
 bank.Greeting();
-bank.Register();
+bank.HandleRegistration();
+BankAccount bankaccount = bank.Register();
+bankaccount.handleBanking();
+
+
 
