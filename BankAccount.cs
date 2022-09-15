@@ -1,4 +1,6 @@
-﻿namespace a;
+﻿using System.Reflection.Metadata;
+
+namespace a;
 
 public class BankAccount
 {
@@ -62,5 +64,16 @@ public class BankAccount
     public void CheckBalance()
     {
         Console.WriteLine($"Your current balance is: {balance}");
+    }
+
+    public void handleBanking()
+    {
+        Console.WriteLine($"What would you like to do now {clientName}? \n a. Check your balance \n b. Deposit money \n c. Withdraw money \n d. Close the banking console");
+        string handleBankingAnswer;
+        handleBankingAnswer = Console.ReadLine();
+        while (!(handleBankingAnswer == "a" || handleBankingAnswer == "b"|| handleBankingAnswer == "c" || handleBankingAnswer == "d"))
+        {
+            Console.WriteLine("Please pick an appropriate answer. ");
+        }
     }
 }
