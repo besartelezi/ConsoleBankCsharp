@@ -1,29 +1,30 @@
-﻿namespace a;
+﻿using ConsoleBankCsharp;
+
+namespace a;
 
 public class Bank
 {
-    private string bankName;
+    private string _bankName;
 
     public Bank(string bankName)
     {
-        this.bankName = bankName;
+        _bankName = bankName;
     }
 
     public string BankName
     {
-        get => bankName;
-        set => bankName = value ?? throw new ArgumentNullException(nameof(value));
+        get => _bankName;
+        set => _bankName = value ?? throw new ArgumentNullException(nameof(value));
     }
 
     public void Greeting()
     {
-        Console.WriteLine($"Welcome to {bankName}. We have noticed you are not registered with us already, would you like to register? y/n");
+        Console.WriteLine($"Welcome to {_bankName}. We have noticed you are not registered with us already, would you like to register? y/n");
     }
 
     public void HandleRegistration()
     {
-        string responseRegistration;
-        responseRegistration = Console.ReadLine();
+        string? responseRegistration = Console.ReadLine();
         while (!(responseRegistration == "y" || responseRegistration == "n"))
         {
             Console.WriteLine("Please use words I can understand I am but a mere computer.");

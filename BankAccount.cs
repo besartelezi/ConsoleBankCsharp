@@ -1,39 +1,37 @@
-﻿using System.Reflection.Metadata;
-
-namespace a;
+﻿namespace ConsoleBankCsharp;
 
 public class BankAccount
 {
     //properties
-    private string clientName;
-    private int balance;
-    private string type;
+    private string _clientName;
+    private int _balance;
+    private string _type;
 
     //constructor
     public BankAccount(string clientName, int balance, string type)
     {
-        this.clientName = clientName;
-        this.balance = balance;
-        this.type = type;
+        _clientName = clientName;
+        _balance = balance;
+        _type = type;
     }
 
     //getters and setters
-    public string _clientName
+    public string ClientName
     {
-        get { return clientName; }
-        set { clientName = value; }
+        get => _clientName;
+        set => _clientName = value ?? throw new ArgumentNullException(nameof(value));
     }
 
-    public int _balance
+    public int Balance
     {
-        get { return balance; }
-        set { balance = value; }
+        get => _balance;
+        set => _balance = value;
     }
 
-    public string _type
+    public string Type
     {
-        get { return type; }
-        set { type = value; }
+        get => _type;
+        set => _type = value ?? throw new ArgumentNullException(nameof(value));
     }
 
     //methods
@@ -44,10 +42,10 @@ public class BankAccount
         Console.WriteLine("How much euros would you like to withdraw?");
 
         withdrawAmount = Convert.ToInt32(Console.ReadLine());
-        balance -= withdrawAmount;
+        _balance -= withdrawAmount;
 
         Console.WriteLine($"You have successfully withdrawn: {withdrawAmount} euros.");
-        handleBanking();
+        HandleBanking();
     }
     
     public void Deposit()
@@ -57,26 +55,26 @@ public class BankAccount
         Console.WriteLine("How much euros would you like to deposit?");
 
         depositAmount = Convert.ToInt32(Console.ReadLine());
-        balance += depositAmount;
+        _balance += depositAmount;
 
         Console.WriteLine($"You have successfully deposited: {depositAmount} euros.");
-        handleBanking();
+        HandleBanking();
     }
     
     public void CheckBalance()
     {
-        Console.WriteLine($"Your current balance is: {balance}");
-        handleBanking();
+        Console.WriteLine($"Your current balance is: {_balance}");
+        HandleBanking();
     }
 
-    public void closeBanking()
+    public void CloseBanking()
     {
-        Console.WriteLine($"Have a good day {clientName}");
+        Console.WriteLine($"Have a good day {_clientName}");
     }
 
-    public void handleBanking()
+    public void HandleBanking()
     {
-        Console.WriteLine($"What would you like to do now {clientName}? \n a. Check your balance \n b. Deposit money \n c. Withdraw money \n d. Close the banking console");
+        Console.WriteLine($"What would you like to do now {_clientName}? \n a. Check your balance \n b. Deposit money \n c. Withdraw money \n d. Close the banking console");
         string handleBankingAnswer;
         handleBankingAnswer = Console.ReadLine();
         while (!(handleBankingAnswer == "a" || handleBankingAnswer == "b"|| handleBankingAnswer == "c" || handleBankingAnswer == "d"))
@@ -102,7 +100,7 @@ public class BankAccount
 
         if (handleBankingAnswer == "d")
         {
-            closeBanking();
+            CloseBanking();
         }
     }
 }
