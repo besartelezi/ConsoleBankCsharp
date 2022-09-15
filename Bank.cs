@@ -1,6 +1,4 @@
-﻿using ConsoleBankCsharp;
-
-namespace a;
+﻿namespace ConsoleBankCsharp;
 
 public class Bank
 {
@@ -35,12 +33,12 @@ public class Bank
         if (responseRegistration == "no" || responseRegistration == "n")
         {
             Console.WriteLine("Understandable, have a day.");
-            return;
         }
     }
 
     public BankAccount Register()
     {
+        //add error handling to money deposit
         Console.WriteLine("What is your name?");
         string clientName;
         clientName = Console.ReadLine();
@@ -91,7 +89,7 @@ public class Bank
         if (confirmRegistration == "y")
         {
             Console.WriteLine($"Welcome {clientName}");
-            BankAccount newBankAccount = new BankAccount($"{clientName}", depositAmount, $"{bankAccountType}");
+            BankAccount newBankAccount = new BankAccount(new Client (1, $"{clientName}", registerDate), depositAmount, $"{bankAccountType}");
             return newBankAccount;
         }
         else

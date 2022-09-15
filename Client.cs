@@ -1,36 +1,34 @@
-﻿namespace a;
+﻿namespace ConsoleBankCsharp;
 
 public class Client
 {
     //properties
-    private int id;
-    private string name;
-    private string dateJoined;
-    
-    //constructor
+    private int _id;
+    private string _name;
+    private string _dateJoined;
+
     public Client(int id, string name, string dateJoined)
     {
-        this.id = id;
-        this.name = name;
-        this.dateJoined = dateJoined;
+        _id = id;
+        _name = name;
+        _dateJoined = dateJoined;
     }
-    
-    //getters and setters
+
     public int Id
     {
-        get => id;
-        set => id = value;
+        get => _id;
+        set => _id = value;
     }
 
     public string Name
     {
-        get => name;
-        set => name = value ?? throw new ArgumentNullException(nameof(value));
+        get => _name;
+        set => _name = value ?? throw new ArgumentNullException(nameof(value));
     }
 
     public string DateJoined
     {
-        get => dateJoined;
-        set => dateJoined = value ?? throw new ArgumentNullException(nameof(value));
+        get => _dateJoined;
+        set => _dateJoined = value ?? throw new ArgumentNullException(nameof(value));
     }
 }
